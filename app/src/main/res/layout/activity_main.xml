@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Library Book Tracker"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="296dp"
+        android:text="Book Code:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/bookCodeTxt"
+        android:layout_width="335dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="enter book code"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="189dp"
+        android:text="No. of days to be borrowed:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookCodeTxt" />
+
+    <EditText
+        android:id="@+id/numOfDaysTxt"
+        android:layout_width="334dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:hint="no. of days"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/borrowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="155dp"
+        android:text="BORROW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numOfDaysTxt" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="307dp"
+        android:text="Author:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numOfDaysTxt" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="323dp"
+        android:text="Title:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authorTxt" />
+
+    <TextView
+        android:id="@+id/authorTxt"
+        android:layout_width="145dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="209dp"
+        android:textColor="@color/design_default_color_primary_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="145dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="209dp"
+        android:textColor="@color/design_default_color_primary_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="60dp"
+        android:text="Total Price:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/authorTxt"
+        app:layout_constraintTop_toBottomOf="@+id/numOfDaysTxt" />
+
+    <TextView
+        android:id="@+id/totalPriceTxt"
+        android:layout_width="107dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="29dp"
+        android:textColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/authorTxt"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/isBorrowedTxt"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="96dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toEndOf="@+id/titleTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
